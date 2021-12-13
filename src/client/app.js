@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const Test = ()=>{
     const [title, setTitle]=useState('Title')
     return (
-        <div onClick={()=>alert('Hydrate activex')}>Test Componentxy{title}</div>
+        <div onClick={()=>alert('Hydrate active')}>Test Component {title}</div>
     )
 }
 export default Test;

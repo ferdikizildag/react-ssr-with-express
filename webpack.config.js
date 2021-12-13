@@ -4,7 +4,7 @@ const path = require("path");
 const config = {
   entry: {
     vendor: ["@babel/polyfill", "react"],
-    app: ["./src/components/index.js"]
+    app: ["./src/client/index.js"]
   },
   output: {
     path: path.resolve(__dirname, "public"),
@@ -27,7 +27,7 @@ const config = {
   resolve: {
     extensions: [".js", ".jsx", ".json", ".wasm", ".mjs", "*"]
   },
-  devtool: 'source-map'
+  devtool: 'eval-source-map'
 };
 
 module.exports = config;

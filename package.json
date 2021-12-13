@@ -5,13 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon --exec babel-node src/server.js",
-    "webpack": "webpack --mode development"
+    "server": "nodemon --exec babel-node src/server.js",
+    "watch": "webpack --mode development --watch"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "compression": "^1.7.4",
     "express": "^4.17.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"

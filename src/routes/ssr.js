@@ -1,5 +1,5 @@
 import express from "express";
-import App from "../components/app";
+import App from "../client/app";
 import React from "react";
 import { renderToString } from "react-dom/server";
 
@@ -9,9 +9,9 @@ router.get("/", async (req, res) => {
     const reactComp = renderToString(<App />);
     const theHtml = `
     <html>
-    <head><title>My First SSR</title></head>
+    <head><title>Server Side Rendering</title></head>
     <body>
-    <h1>My First Server Side Render</h1>
+    <h1>Server Side Render</h1>
     <div id="root">${reactComp}</div>
     <script src="/app.js" charset="utf-8"></script>
     <script src="/vendor.js" charset="utf-8"></script>
